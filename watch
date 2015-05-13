@@ -1,0 +1,3 @@
+#/bin/bash
+
+babel contact.jsx --watch --out-file contact.js

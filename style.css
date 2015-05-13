@@ -2,7 +2,25 @@
 
 /* reset */
 
+* { box-sizing: border-box; }
+
 body { margin: initial; }
+
+button,
+input,
+textarea {
+  border: initial;
+  border-radius: initial;
+  cursor: pointer;
+  font: inherit;
+  -webkit-font-smoothing: inherit;
+  margin: initial;
+  vertical-align: top;
+}
+button:focus,
+input:focus,
+textarea:focus { outline: initial; }
+textarea { resize: initial; }
 
 a {
   color: inherit;
@@ -20,6 +38,16 @@ html {
 }
 
 body { text-align: center; }
+
+input,
+textarea {
+  width: 100%;
+  border: 1px solid #bbb;
+  margin: 2px 0;
+  padding: 10px;
+}
+input:focus,
+textarea:focus { border-color: #6cb; }
 
 a:focus,
 a:hover { text-decoration: underline; }
