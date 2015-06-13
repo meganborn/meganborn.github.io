@@ -11,9 +11,49 @@
       <h1 style="font-size:30px;font-weight:400;margin:0 0 10px;text-transform:uppercase;">Megan Born</h1>
       <h2 style="font:18px 'Unica One';margin:0;text-transform:uppercase;">Interior Design</h2>
     </header>
-    <a href="https://instagram.com/p/wK1DuNA5J8" style="width:320px;height:320px;background:url(https://igcdn-photos-d-a.akamaihd.net/hphotos-ak-xat1/t51.2885-15/10817736_629667967143331_1382211120_n.jpg) center / cover;display:block;margin:10px auto;" target="_blank"></a>
-    <a href="https://instagram.com/p/vU-UBoA5C-" style="width:320px;height:320px;background:url(https://igcdn-photos-e-a.akamaihd.net/hphotos-ak-xpa1/t51.2885-15/10375862_550787075053356_930574161_n.jpg) center / cover;display:block;margin:10px auto;" target="_blank"></a>
-    <a href="https://homepolish.com/mag/aubre-thompson" target="_blank">View this full project on Homepolish.com</a>
+    <div class="grid">
+      <div class="grid-sizer"></div>
+      <div class="gutter-sizer"></div>
+      <div class="grid-item">
+        <img src="http://mattborn.s3.amazonaws.com/meganborn/Homepolish-13038-interior-design-b4936a9d-1.jpeg">
+      </div>
+      <div class="grid-item">
+        <img src="http://mattborn.s3.amazonaws.com/meganborn/Homepolish-13038-decorating-65208b2b.jpeg">
+      </div>
+      <div class="grid-item">
+        <img src="http://mattborn.s3.amazonaws.com/meganborn/Homepolish-13038-decorating-3586ca13.jpeg">
+      </div>
+      <div class="grid-item">
+        <img src="http://mattborn.s3.amazonaws.com/meganborn/Homepolish-13051-decorating-6a2172e7.jpeg">
+      </div>
+      <div class="grid-item">
+        <img src="http://mattborn.s3.amazonaws.com/meganborn/Homepolish-13051-interior-inspiration-cf0e295b.jpeg">
+      </div>
+      <div class="grid-item">
+        <img src="http://mattborn.s3.amazonaws.com/meganborn/Homepolish-13051-interiors-eaccb3f1.jpeg">
+      </div>
+      <div class="grid-item">
+        <img src="http://mattborn.s3.amazonaws.com/meganborn/Homepolish-13051-room-design-8580d8e2.jpeg">
+      </div>
+      <div class="grid-item">
+        <img src="http://mattborn.s3.amazonaws.com/meganborn/Homepolish-13051-room-design-26050205.jpeg">
+      </div>
+      <div class="grid-item">
+        <img src="http://mattborn.s3.amazonaws.com/meganborn/Homepolish-13051-home-design-40ae59a0.jpeg">
+      </div>
+      <div class="grid-item">
+        <img src="http://mattborn.s3.amazonaws.com/meganborn/Homepolish-7217-interior-design-9b04c753.jpeg">
+      </div>
+      <div class="grid-item">
+        <img src="http://mattborn.s3.amazonaws.com/meganborn/Homepolish-7217-decorating-ecdaba5d.jpeg">
+      </div>
+      <div class="grid-item">
+        <img src="http://mattborn.s3.amazonaws.com/meganborn/Homepolish-7217-home-design-db21fccd.jpeg">
+      </div>
+      <div class="grid-item">
+        <img src="http://mattborn.s3.amazonaws.com/meganborn/Homepolish-7217-decorating-8bdaac00.jpeg">
+      </div>
+    </div>
     <footer style="padding:100px 0;">
       <p>Looking for help with your space?</p>
       <div id="contact">
@@ -26,7 +66,16 @@
       <p style="font:16px 'Unica One';letter-spacing:1em;margin:0;text-indent:1em;text-transform:uppercase;">Chicago</p>
     </footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/masonry/3.3.0/masonry.pkgd.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.13.2/react.min.js"></script>
     <script src="contact.js"></script>
+    <script>
+    $('.grid').masonry({
+      columnWidth: '.grid-sizer',
+      gutter: '.gutter-sizer',
+      itemSelector: '.grid-item',
+      percentPosition: true
+    });
+    </script>
   </body>
 </html>
