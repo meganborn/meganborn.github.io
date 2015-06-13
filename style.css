@@ -61,6 +61,7 @@ a:hover { text-decoration: underline; }
   max-width: 1000px;
   margin: 0 auto;
 }
+.grid img { width: 100%; }
 .grid-sizer,
 .grid-item {
   width: 48%;
